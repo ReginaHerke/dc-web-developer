@@ -31,4 +31,5 @@ a:hover {
 
 img {
   width: 50%;
+  clip-path: circle(30%);
 }
