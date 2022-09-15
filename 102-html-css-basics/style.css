@@ -4,12 +4,13 @@ body {
   text-align: center;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
+  background-color: beige;
 }
 
 h1 {
   color: #5f9ea0;
   font-size: 28px;
-  margin-top: 50px;
+  margin-top: 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
@@ -26,4 +27,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+img {
+  width: 50%;
 }
