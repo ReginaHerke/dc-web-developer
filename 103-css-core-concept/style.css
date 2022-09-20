@@ -5,9 +5,16 @@ body {
   font-family: "Raleway", sans-serif;
   width: 60%;
   margin: auto;
-  color: white;
+  margin-top: 200px;
   font-size: 16px;
   font-weight: 200;
+  text-align: center;
+}
+
+header {
+  position: absolute;
+  top: 30px;
+  align-content: center;
 }
 
 .headerbild {
@@ -26,6 +33,7 @@ main {
   border: 5px solid #033859;
   text-align: center;
   padding: 50px 30px;
+  color: white;
 }
 
 .info {
@@ -60,7 +68,18 @@ h2 {
 }
 
 ul {
-  margin-left: 0px;
+  margin-left: -15px;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.punkt {
+  color: #d94814;
+  font-weight: 700;
+  list-style: circle;
 }
 
 .linkimtext {
@@ -74,4 +93,27 @@ ul {
 .linkimtext:hover {
   color: #ffffff;
   background-color: #d94814;
+}
+
+.klickmich {
+  background-color: #033859;
+  border: none;
+  color: #ffffff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.klickmich:hover {
+  background-color: #d94814;
+}
+
+footer a {
+  font-weight: 700;
+  color: #d94814;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #033859;
 }
