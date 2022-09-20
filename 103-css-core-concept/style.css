@@ -3,29 +3,24 @@
 body {
   background-color: #c3d2e6;
   font-family: "Raleway", sans-serif;
-  width: 60%;
+  width: 30%;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 100px;
   font-size: 16px;
   font-weight: 200;
   text-align: center;
 }
 
 header {
-  position: absolute;
-  top: 30px;
-  align-content: center;
 }
 
-.headerbild {
+.bild {
   width: 200px;
   height: 200px;
+  object-fit: cover;
   border-radius: 50%;
-  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/103-css-core-concept/_links/sam-dan-truong-ju2NgSoR6pA-unsplash.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
   border: 5px solid #033859;
+  margin-top: -100px;
 }
 
 main {
