@@ -1,7 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
-  background-color: #2475d8;
+  background-color: #c3d2e6;
+  font-family: "Raleway", sans-serif;
+  width: 60%;
+  margin: auto;
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
 }
 
-p {
-  color: red;
+.headerbild {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/103-css-core-concept/_links/sam-dan-truong-ju2NgSoR6pA-unsplash.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px solid #033859;
+}
+
+main {
+  background-color: #466c8c;
+  border: 5px solid #033859;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.info {
+  font-size: 20px;
+  color: #033859;
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0px;
+}
+
+.year {
+  font-weight: 800;
+  color: #d94814;
+}
+
+.first {
+  text-align: left;
+  background-color: #033859;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 50px 0px;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+ul {
+  margin-left: 0px;
+}
+
+.linkimtext {
+  color: #033859;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+.linkimtext:hover {
+  color: #ffffff;
+  background-color: #d94814;
 }
