@@ -52,20 +52,19 @@ h2 {
   margin-bottom: 40px;
 }
 
-.aboutme {
+.start-wrapper {
   display: flex;
-  gap: 80px;
+  gap: 50px;
 }
-.aboutme .name {
-  color: #9fc131;
-  font-weight: 600;
-}
-.aboutme .bild {
-  width: 30%;
+.start-wrapper .start-images {
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.aboutme .metext {
+.start-wrapper .above {
+  margin-bottom: 50px;
+}
+.start-wrapper .metext {
   background-color: #042940;
   color: #ffffff;
   padding: 20px 40px 40px 80px;
@@ -74,13 +73,11 @@ h2 {
   height: -moz-max-content;
   height: max-content;
 }
-
-.myskills {
-  display: flex;
-  gap: 80px;
-  position: relative;
-  top: -150px;
+.start-wrapper .metext .name {
+  color: #9fc131;
+  font-weight: 600;
 }
+
 .myskills .bild {
   width: 30%;
   -o-object-fit: cover;

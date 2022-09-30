@@ -59,16 +59,16 @@ h2 {
   margin-bottom: 40px;
 }
 
-.aboutme {
+.start-wrapper {
   display: flex;
-  gap: 80px;
-  .name {
-    color: $yellow;
-    font-weight: 600;
-  }
-  .bild {
-    width: 30%;
+  gap: 50px;
+
+  .start-images {
+    width: 50%;
     object-fit: cover;
+  }
+  .above {
+    margin-bottom: 50px;
   }
   .metext {
     background-color: $blue;
@@ -76,14 +76,14 @@ h2 {
     padding: 20px 40px 40px 80px;
     text-align: justify;
     height: max-content;
+    .name {
+      color: $yellow;
+      font-weight: 600;
+    }
   }
 }
 
 .myskills {
-  display: flex;
-  gap: 80px;
-  position: relative;
-  top: -150px;
   .bild {
     width: 30%;
     object-fit: cover;
