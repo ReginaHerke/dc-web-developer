@@ -61,7 +61,6 @@ h2 {
 
 .start-wrapper {
   display: flex;
-  gap: 50px;
 
   .start-images {
     width: 50%;
@@ -76,6 +75,7 @@ h2 {
     padding: 20px 40px 40px 80px;
     text-align: justify;
     height: max-content;
+    margin-bottom: 40px;
     .name {
       color: $yellow;
       font-weight: 600;

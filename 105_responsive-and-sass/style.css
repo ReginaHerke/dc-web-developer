@@ -54,7 +54,6 @@ h2 {
 
 .start-wrapper {
   display: flex;
-  gap: 50px;
 }
 .start-wrapper .start-images {
   width: 50%;
@@ -72,6 +71,7 @@ h2 {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-bottom: 40px;
 }
 .start-wrapper .metext .name {
   color: #9fc131;
