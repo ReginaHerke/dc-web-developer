@@ -67,14 +67,30 @@ h2 {
     font-weight: 600;
   }
   .bild {
-    width: 40%;
+    width: 30%;
     object-fit: cover;
   }
   .metext {
     background-color: $blue;
     color: $white;
-    padding: 20px 40px 20px 80px;
+    padding: 20px 40px 40px 80px;
     text-align: justify;
+    height: max-content;
+  }
+}
+
+.myskills {
+  display: flex;
+  gap: 80px;
+  position: relative;
+  top: -150px;
+  .bild {
+    width: 30%;
+    object-fit: cover;
+    position: relative;
+    top: 200px;
+  }
+  progress {
   }
 }
 

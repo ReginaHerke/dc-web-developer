@@ -61,17 +61,33 @@ h2 {
   font-weight: 600;
 }
 .aboutme .bild {
-  width: 40%;
+  width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .aboutme .metext {
   background-color: #042940;
   color: #ffffff;
-  padding: 20px 40px 20px 80px;
+  padding: 20px 40px 40px 80px;
   text-align: justify;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
+.myskills {
+  display: flex;
+  gap: 80px;
+  position: relative;
+  top: -150px;
+}
+.myskills .bild {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: 200px;
+}
 hr {
   border-top: 4px solid #005c53;
   margin: 200px 0px;
