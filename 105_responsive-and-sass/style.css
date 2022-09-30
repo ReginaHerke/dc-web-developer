@@ -1,15 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-$green: #005c53;
-$blue: #042940;
-$yellow: #9fc131;
-$white: #ffffff;
-
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   text-align: left;
-  color: $blue;
+  color: #042940;
   height: 2000px;
   padding-top: 200px;
 }
@@ -19,23 +13,22 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: $green;
+  background-color: #005c53;
   padding: 60px 0px 30px 0px;
   text-align: right;
-
-  a {
-    color: #ffffff;
-    text-decoration: none;
-    border-top: 4px solid $yellow;
-    padding: 10px;
-    border-left: 4px solid transparent;
-    letter-spacing: 1.5px;
-    margin: 30px;
-    &:hover {
-      color: $yellow;
-      border-left: 4px solid $yellow;
-    }
-  }
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  border-top: 4px solid #9fc131;
+  padding: 10px;
+  border-left: 4px solid transparent;
+  letter-spacing: 1.5px;
+  margin: 30px;
+}
+nav a:hover {
+  color: #9fc131;
+  border-left: 4px solid #9fc131;
 }
 
 main {
@@ -52,75 +45,81 @@ h1 {
 
 h2 {
   font-size: 15px;
-  color: $green;
+  color: #005c53;
   font-weight: 400;
   letter-spacing: 1.5px;
   margin-bottom: 40px;
 }
 
 .aboutme {
-  border: 1px solid $green;
+  border: 1px solid #005c53;
   padding: 40px 0px;
-  p {
-    margin-bottom: -5px;
-  }
-  .name {
-    color: $yellow;
-    font-weight: 600;
-    background-color: $green;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .bild {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
+}
+.aboutme p {
+  margin-bottom: -5px;
+}
+.aboutme .name {
+  color: #9fc131;
+  font-weight: 600;
+  background-color: #005c53;
+  padding: 10px;
+  border-radius: 5px;
+}
+.aboutme .bild {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 hr {
-  border-top: 4px solid $green;
+  border-top: 4px solid #005c53;
   margin: 200px 0px;
 }
 
 .skill {
-  border: 1px solid $green;
+  border: 1px solid #005c53;
   margin: 20px 0px;
-  p {
-    color: transparent;
-    text-align: left;
-    margin: 0;
-    padding: 10px 0px 10px 10px;
-    &:hover {
-      color: $blue;
-    }
-  }
+}
+.skill p {
+  color: transparent;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0px 10px 10px;
+}
+.skill p:hover {
+  color: #042940;
 }
 
 .html {
   background: linear-gradient(90deg, #042940 80%, transparent 0%);
 }
+
 .html:hover {
   background: linear-gradient(90deg, #dbf227 80%, transparent 0%);
 }
+
 .css {
   background: linear-gradient(90deg, #042940 50%, transparent 0%);
 }
+
 .css:hover {
   background: linear-gradient(90deg, #dbf227 50%, transparent 0%);
 }
+
 .js {
   background: linear-gradient(90deg, #042940 20%, transparent 0%);
 }
+
 .js:hover {
   background: linear-gradient(90deg, #dbf227 20%, transparent 0%);
 }
 
 h3 {
   text-align: left;
-  color: $yellow;
+  color: #9fc131;
   font-weight: 400;
   text-transform: uppercase;
-}
+}/*# sourceMappingURL=style.css.map */
