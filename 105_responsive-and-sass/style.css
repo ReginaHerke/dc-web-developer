@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-align: left;
+  color: #042940;
+  height: 2000px;
+  padding-top: 200px;
+}
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #005c53;
+  padding: 60px 0px 30px 0px;
+  text-align: right;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  border-top: 4px solid #9fc131;
+  padding: 10px;
+  border-left: 4px solid transparent;
+  letter-spacing: 1.5px;
+  margin: 30px;
+}
+nav a:hover {
+  color: #9fc131;
+  border-left: 4px solid #9fc131;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 15px;
+  color: #005c53;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+
+.start-wrapper {
+  display: flex;
+}
+.start-wrapper .start-images {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.start-wrapper .above {
+  margin-bottom: 50px;
+}
+.start-wrapper .metext {
+  background-color: #042940;
+  color: #ffffff;
+  padding: 20px 40px 40px 80px;
+  text-align: justify;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 40px;
+}
+.start-wrapper .metext .name {
+  color: #9fc131;
+  font-weight: 600;
+}
+
+.myskills .bild {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: 200px;
+}
+hr {
+  border-top: 4px solid #005c53;
+  margin: 200px 0px;
+}
+
+.skill {
+  border: 1px solid #005c53;
+  margin: 20px 0px;
+}
+.skill p {
+  color: transparent;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0px 10px 10px;
+}
+.skill p:hover {
+  color: #042940;
+}
+
+.html {
+  background: linear-gradient(90deg, #042940 80%, transparent 0%);
+}
+
+.html:hover {
+  background: linear-gradient(90deg, #dbf227 80%, transparent 0%);
+}
+
+.css {
+  background: linear-gradient(90deg, #042940 50%, transparent 0%);
+}
+
+.css:hover {
+  background: linear-gradient(90deg, #dbf227 50%, transparent 0%);
+}
+
+.js {
+  background: linear-gradient(90deg, #042940 20%, transparent 0%);
+}
+
+.js:hover {
+  background: linear-gradient(90deg, #dbf227 20%, transparent 0%);
+}
+
+h3 {
+  text-align: left;
+  color: #9fc131;
+  font-weight: 400;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
