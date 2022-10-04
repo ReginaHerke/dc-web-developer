@@ -55,7 +55,9 @@ h2 {
   font-size: 32px;
   font-weight: 500;
 }
-
+.button-wrapper {
+  margin-top: 50px;
+}
 .button {
   background-color: #00003f;
   border-radius: 50px;
@@ -63,6 +65,9 @@ h2 {
   color: #ffffff;
   text-decoration: none;
   border: none;
+}
+.button:hover {
+  background-color: goldenrod;
 }
 .header-img-wrapper {
   width: 30%;
