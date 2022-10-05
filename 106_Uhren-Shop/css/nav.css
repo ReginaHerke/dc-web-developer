@@ -1,0 +1,25 @@
+header {
+  border-bottom: 5px solid #00003f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+header img {
+  width: 300px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #00003f;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid goldenrod;
+}
