@@ -26,9 +26,19 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img id="logo" src="images/logo.png" alt="Logo Uhren Shop"
-      /></a>
+      <a href="index.html">
+        <picture>
+          <source
+            id="logo"
+            srcset="images/logo_icon.png"
+            media="(max-width: 576px)"
+          />
+          <img
+            id="logo"
+            src="images/logo.png"
+            alt="Logo Uhren Shop"
+          /> </picture
+      ></a>
       <nav>
         <ul>
           <li><a href="shop.html">Shop</a></li>
