@@ -1,0 +1,28 @@
+.shop-main {
+  margin: 50px;
+}
+
+.shop-main h2 {
+  margin-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #d6dce6;
+  padding: 20px;
+}
+
+.product-img-wrapper {
+  height: 150px;
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

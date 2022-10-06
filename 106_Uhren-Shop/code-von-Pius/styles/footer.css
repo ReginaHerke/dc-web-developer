@@ -64,6 +64,7 @@ footer .footer-subline {
 @media screen and (max-width: 992px) {
   footer .footer-content {
     flex-direction: column;
+    padding: 50px;
   }
 
   .footer-content-contact {
