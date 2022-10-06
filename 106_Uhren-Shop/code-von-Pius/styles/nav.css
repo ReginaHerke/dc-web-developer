@@ -39,3 +39,9 @@ nav ul li:hover {
   border-bottom: 3px solid gold;
   padding-bottom: 0px;
 }
+
+@media screen and (max-width: 576px) {
+  #logo {
+    width: 70%;
+  }
+}

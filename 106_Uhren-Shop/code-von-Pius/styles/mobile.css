@@ -1,8 +1,4 @@
 @media screen and (max-width: 576px) {
-  #logo {
-    width: 50%;
-  }
-
   .header-section {
     width: auto;
   }
