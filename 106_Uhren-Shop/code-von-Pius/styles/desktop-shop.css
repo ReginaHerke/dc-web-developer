@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .product-item {
+    flex-grow: 1;
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-item {
+    flex-basis: calc(30% - 10px);
+  }
+  .product-item:last-child,
+  .product-item:first-child {
+    flex-basis: calc(50% - 10px);
+    flex-grow: 0;
+  }
+}
