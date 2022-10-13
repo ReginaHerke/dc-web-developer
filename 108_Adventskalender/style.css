@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap");
+
+body {
+  background-color: #faf0e6;
+  font-family: "Raleway", sans-serif;
+  color: #073d40;
+  font-size: 1em;
+  padding: 30px 50px;
+}
+p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+nav img {
+  width: 50px;
+}
+.menu {
+  align-self: flex-end;
+  left: 0;
+}
+.menu a {
+  color: #073d40;
+  text-decoration: none;
+  margin: 0px 0px 0px 30px;
+}
+.menu a:hover {
+  color: #c2170c;
+  border-bottom: 2px solid #c2170c;
+  padding-bottom: 3px;
+}
+
+h1 {
+  color: #faf0e6;
+  font-weight: 100;
+  letter-spacing: 0.5em;
+  background-color: #c2170c;
+  display: inline;
+  padding: 15px 10px 15px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timecode {
+  display: flex;
+  gap: 15px;
+}
+
+.timecode-item {
+  height: 100%;
+  width: 80px;
+  border: 2px dashed #c2170c;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 15px 0px;
+}
+
+.unit {
+  font-size: 0.5em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
