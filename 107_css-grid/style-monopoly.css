@@ -70,7 +70,6 @@ body {
   rotate: 90deg;
 }
 .yellow {
-  
   border-left: 2px solid black;
 }
 
@@ -92,6 +91,5 @@ body {
 }
 
 #monopoly:checked ~ .container .feld .yellow {
-  background-color: yellow;{
-
+  background-color: yellow;
 }
