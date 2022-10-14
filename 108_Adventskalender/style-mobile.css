@@ -1,0 +1,24 @@
+body {
+  padding: 20px;
+}
+
+nav img {
+  width: 70px;
+}
+
+h1 {
+  letter-spacing: 0.25em;
+  font-size: 1.5em;
+}
+
+.timecode {
+  gap: 10px;
+}
+
+.timecode-item {
+  width: 65px;
+}
+
+.calender > div {
+  font-size: 1.25em;
+}
