@@ -6,19 +6,88 @@ nav img {
   width: 70px;
 }
 
+header {
+  width: 100%;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+}
+
 h1 {
   letter-spacing: 0.25em;
   font-size: 1.5em;
+  display: block;
+  width: 100%;
 }
 
 .timecode {
   gap: 10px;
+  width: 100%;
 }
 
 .timecode-item {
-  width: 65px;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+.calender {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .calender > div {
   font-size: 1.25em;
+}
+
+.item4 {
+  grid-area: 7 / 1 / span 2 / span 2;
+}
+
+.item5 {
+  grid-area: 7 / 3 / span 1 / span 2;
+}
+
+.item6 {
+  grid-area: 7 / 5 / span 1 / span 1;
+}
+
+.item9 {
+  grid-area: 8 / 3 / span 2 / span 1;
+}
+
+.item10 {
+  grid-area: 8 / 4 / span 2 / span 2;
+}
+
+.item12 {
+  grid-area: 9 / 1 / span 1 / span 2;
+}
+
+.item16 {
+  grid-area: 10 / 1 / span 1 / span 1;
+}
+
+.item17 {
+  grid-area: 10 / 2 / span 1 / span 2;
+}
+
+.item18 {
+  grid-area: 10 / 4 / span 2 / span 2;
+}
+
+.item22 {
+  grid-area: 11 / 1 / span 2 / span 2;
+}
+
+.item23 {
+  grid-area: 11 / 3 / span 2 / span 1;
+}
+
+.item24 {
+  grid-area: 12 / 4 / span 1 / span 2;
 }
