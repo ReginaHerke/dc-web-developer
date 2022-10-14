@@ -23,10 +23,6 @@ nav img {
   width: 50px;
 }
 
-.menu {
-  margin-right: -10px;
-}
-
 nav ul {
   list-style: none;
   float: left;
@@ -39,15 +35,19 @@ nav ul li {
   text-align: center;
 }
 
-.menu a {
+nav a {
   color: #073d40;
   text-decoration: none;
 }
 
-.menu a:hover {
+nav a:hover {
   color: #c2170c;
   border-bottom: 2px solid #c2170c;
   padding-bottom: 3px;
+}
+
+#menuToggle input {
+  display: none;
 }
 
 header {
