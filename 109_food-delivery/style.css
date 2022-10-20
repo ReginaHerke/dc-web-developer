@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #fcefdc;
+  --color-secondary: #025939;
+  --color-highlights: #f25430;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --spacing-small: 10px;
+  --spacing-medium: 30px;
+  --spacing-large: 50px;
+  --spacing-x-large: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  padding-top: 200px;
+}
+
+a {
+  color: var(--color-black);
+}
+a:hover {
+  color: var(--color-highlights);
+}
+h1 {
+  font-size: 3em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: var(--spacing-small) 0px;
+}
+
+.nav-wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo,
+#app-icon {
+  height: 80px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-large);
+}
+
+main {
+  height: 5000px;
+  width: 1200px;
+  margin: 0px auto;
+}
+
+header {
+  display: flex;
+  gap: var(--spacing-x-large);
+}
+
+.header-content-wrapper {
+  width: 100%;
+}
+
+.searchbar-wrapper {
+  background-color: var(--color-primary);
+  border-radius: 50px;
+  padding: var(--spacing-small) var(--spacing-medium);
+  margin-top: var(--spacing-large);
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar-wrapper input {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  color: var(--color-black);
+}
+
+.searchbar-wrapper img {
+  height: 60px;
+}
+
+.header-img-wrapper {
+  width: 100%;
+  background-image: url(./img/elena-rabkina-ncwhE6jTslg-unsplash.jpg);
+  background-size: cover;
+  background-position: left center;
+}
