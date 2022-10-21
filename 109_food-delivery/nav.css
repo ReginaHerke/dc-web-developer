@@ -1,0 +1,30 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: var(--spacing-small);
+}
+
+.nav-wrapper {
+  width: 100vw;
+  padding-right: var(--spacing-small);
+}
+
+.nav-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo,
+#app-icon {
+  height: 45px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-large);
+  display: none;
+}

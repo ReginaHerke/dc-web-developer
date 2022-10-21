@@ -1,0 +1,99 @@
+.mobile-none {
+  display: unset;
+}
+
+body {
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: left;
+}
+
+#logo,
+#app-icon {
+  height: 60px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: var(--spacing-large);
+}
+
+.searchbar-wrapper {
+  margin-top: var(--spacing-large);
+}
+
+.header-img-wrapper {
+  height: auto;
+}
+
+.section-facts {
+  margin: var(--spacing-x-large) 0px;
+  padding: var(--spacing-x-large);
+}
+
+.kitchen-categories {
+  margin-bottom: var(--spacing-x-large);
+  text-align: left;
+}
+
+.kitchen-categories-item-wrapper {
+  width: 700px;
+  margin-bottom: var(--spacing-medium);
+  justify-content: flex-start;
+}
+
+.section-app-download {
+  padding: var(--spacing-large);
+  padding-bottom: 0px;
+}
+h2 {
+  text-align: left;
+  margin: var(--spacing-small) 0px;
+}
+
+.section-app-download-img-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--spacing-medium);
+}
+
+.section-app-download-text-wrapper {
+  width: 60%;
+}
+
+.section-app-download-badges {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-small);
+  padding-bottom: var(--spacing-medium);
+}
+
+.section-app-download-badges img {
+  height: 70px;
+}
+
+.section-app-download-phone {
+  width: 300px;
+  height: 500px;
+  margin-top: -350px;
+}
