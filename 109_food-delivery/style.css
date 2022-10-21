@@ -16,12 +16,20 @@
   --spacing-x-large: 80px;
 }
 
+.mobile-none {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   font-weight: 300;
-  padding-top: 200px;
+  padding-top: var(--spacing-large);
+}
+
+p {
+  margin: 0px;
 }
 
 a {
@@ -31,7 +39,17 @@ a:hover {
   color: var(--color-highlights);
 }
 h1 {
-  font-size: 3em;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.25em;
+  margin: var(--spacing-large) 0px;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.25em;
+  margin: var(--spacing-small);
 }
 
 nav {
@@ -39,13 +57,12 @@ nav {
   top: 0;
   width: 100%;
   background-color: var(--color-primary);
-  padding: var(--spacing-small) 0px;
+  padding: var(--spacing-small);
 }
 
 .nav-wrapper {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  padding-right: var(--spacing-small);
 }
 
 .nav-content-wrapper {
@@ -56,35 +73,34 @@ nav {
 
 #logo,
 #app-icon {
-  height: 80px;
+  height: 45px;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
   gap: var(--spacing-large);
+  display: none;
 }
 
 main {
   height: 5000px;
-  width: 1200px;
-  margin: 0px auto;
 }
 
 header {
-  display: flex;
-  gap: var(--spacing-x-large);
+  margin-bottom: var(--spacing-large);
 }
 
 .header-content-wrapper {
   width: 100%;
+  padding: 0px var(--spacing-small);
 }
 
 .searchbar-wrapper {
   background-color: var(--color-primary);
   border-radius: 50px;
   padding: var(--spacing-small) var(--spacing-medium);
-  margin-top: var(--spacing-large);
+  margin-top: var(--spacing-small);
   display: flex;
   justify-content: space-between;
 }
@@ -97,12 +113,101 @@ header {
 }
 
 .searchbar-wrapper img {
-  height: 60px;
+  height: 50px;
 }
 
 .header-img-wrapper {
   width: 100%;
+  height: 250px;
   background-image: url(./img/elena-rabkina-ncwhE6jTslg-unsplash.jpg);
   background-size: cover;
   background-position: left center;
+}
+
+.section-facts {
+  margin: var(--spacing-medium) 0px;
+  background-color: var(--color-secondary);
+  width: 100%;
+  padding: var(--spacing-medium) var(--spacing-small);
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.section-facts-numbers {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.kitchen-categories {
+  margin: 0px var(--spacing-small);
+  text-align: center;
+}
+
+.kitchen-categories a {
+  text-decoration: none;
+  color: var(--color-highlights);
+}
+
+.kitchen-categories a:hover {
+  color: var(--color-secondary);
+}
+
+.kitchen-categories-item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-small);
+  justify-content: center;
+  margin-bottom: var(--spacing-medium);
+}
+.kitchen-categories-item-wrapper a {
+  color: var(--color-black);
+}
+
+.kitchen-categories-item-wrapper a:hover {
+  color: var(--color-highlights);
+}
+
+.kitchen-category-item {
+  background-color: var(--color-primary);
+  padding: 5px var(--spacing-medium);
+  border-radius: 50px;
+}
+
+.section-app-download {
+  margin: var(--spacing-large) 0px;
+  background-color: var(--color-secondary);
+  width: 100%;
+  padding: var(--spacing-medium) var(--spacing-small);
+  padding-bottom: 0px;
+  color: var(--color-white);
+}
+
+.section-app-download h1 {
+  margin: 0px;
+  margin-bottom: var(--spacing-medium);
+}
+
+.section-app-download-img-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-medium);
+}
+
+.section-app-download-badges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+  width: 50%;
+  padding-bottom: var(--spacing-medium);
+}
+
+.section-app-download-phone {
+  width: 100%;
+  height: 200px;
+  background-image: url(./img/phone01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
