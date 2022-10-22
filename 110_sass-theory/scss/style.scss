@@ -1,0 +1,34 @@
+@use "variables" as var;
+@use "buttons";
+
+body {
+  width: 1000px;
+  margin: 50px auto;
+  font-family: sans-serif;
+  color: var.$color-font-grey;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid var.$color-primary;
+  margin: var.$spacing-medium 0px;
+}
+
+@mixin my-nice-border($width: 2px, $style: dotted, $color: pink) {
+  border: $width $style $color;
+}
+
+@each $name, $color in var.$colors-difficulties {
+  .#{$name} {
+    color: $color;
+    @include my-nice-border(1px, solid, $color);
+    padding: 5px;
+    display: inline;
+    background-color: lighten($color, 40%);
+  }
+}
+
+h1,
+h2 {
+  @include my-nice-border();
+}

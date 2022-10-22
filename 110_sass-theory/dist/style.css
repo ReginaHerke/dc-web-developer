@@ -1,0 +1,43 @@
+body {
+  width: 1000px;
+  margin: 50px auto;
+  font-family: sans-serif;
+  color: #3d3d3d;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid #13678a;
+  margin: 40px 0px;
+}
+
+.easy {
+  color: green;
+  border: 1px solid green;
+  padding: 5px;
+  display: inline;
+  background-color: #4dff4d;
+}
+
+.medium {
+  color: orange;
+  border: 1px solid orange;
+  padding: 5px;
+  display: inline;
+  background-color: #ffedcc;
+}
+
+.hard {
+  color: red;
+  border: 1px solid red;
+  padding: 5px;
+  display: inline;
+  background-color: #ffcccc;
+}
+
+h1,
+h2 {
+  border: 2px dotted pink;
+}
+
+/*# sourceMappingURL=style.css.map */
