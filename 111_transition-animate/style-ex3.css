@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: beige;
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.top-left {
+  background-color: green;
+}
+.top-left:hover {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in;
+  transform-origin: top left;
+}
+
+.top-right {
+  background-color: red;
+}
+.top-right:hover {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in;
+  transform-origin: top right;
+}
+
+.bottom-left {
+  background-color: yellow;
+}
+.bottom-left:hover {
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in;
+  transform-origin: bottom left;
+}
+
+.bottom-right {
+  background-color: blue;
+}
+.bottom-right:hover {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in;
+  transform-origin: bottom right;
+}

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: beige;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container > div {
+  width: 100px;
+  border: 3px solid olive;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+
+  transition: all 1s ease-in-out;
+}
+
+.empty {
+  color: olive;
+  background-color: transparent;
+}
+
+.empty:hover {
+  background-color: olive;
+  color: white;
+}
+
+.filled {
+  color: white;
+  background-color: olive;
+}
+
+.filled:hover {
+  background-color: transparent;
+  color: olive;
+}
