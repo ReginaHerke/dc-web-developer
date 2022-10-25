@@ -1,0 +1,23 @@
+@use "variables" as var;
+
+nav {
+  background-color: var.$color-beige;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var.$spacing-20 var.$spacing-10;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-download-mobile {
+  height: 30px;
+}

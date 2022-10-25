@@ -1,0 +1,23 @@
+nav {
+  background-color: #f2ece5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-download-mobile {
+  height: 30px;
+}
+
+/*# sourceMappingURL=nav.css.map */
