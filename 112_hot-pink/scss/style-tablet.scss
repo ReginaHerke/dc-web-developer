@@ -1,0 +1,23 @@
+@use "variables" as var;
+
+.desktop-only {
+  display: inherit;
+}
+
+section {
+  margin: 0px var.$spacing-40;
+}
+
+.nav-wrapper {
+  padding: var.$spacing-40 var.$spacing-20;
+}
+
+header {
+  padding-bottom: var.$spacing-80;
+}
+
+.header-img-wrapper {
+  height: 500px;
+  background-position: center;
+  margin-bottom: var.$spacing-40;
+}

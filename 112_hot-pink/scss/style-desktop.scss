@@ -1,1 +1,38 @@
 @use "variables" as var;
+
+.desktop-only {
+  display: inherit;
+}
+.logo {
+  height: 60px;
+}
+
+section {
+  margin: 0px auto;
+  width: 1200px;
+}
+
+header {
+  margin-top: var.$spacing-80;
+  background-color: var.$color-beige;
+  padding-bottom: var.$spacing-40;
+  display: flex;
+}
+
+.nav-download-icon-mobile {
+  display: none;
+}
+
+.nav-download-desktop {
+  display: flex;
+  align-items: center;
+  gap: var.$spacing-10;
+  color: var.$color-hot-pink;
+  font-weight: 600;
+  background-color: var.$color-hot-pink-50;
+  padding: var.$spacing-10;
+  .nav-download-icon-desktop {
+    fill: var.$color-hot-pink;
+    height: 30px;
+  }
+}

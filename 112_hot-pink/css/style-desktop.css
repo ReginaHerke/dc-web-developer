@@ -1,3 +1,39 @@
+.desktop-only {
+  display: inherit;
+}
 
+.logo {
+  height: 60px;
+}
+
+section {
+  margin: 0px auto;
+  width: 1200px;
+}
+
+header {
+  margin-top: 80px;
+  background-color: #f2ece5;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+.nav-download-icon-mobile {
+  display: none;
+}
+
+.nav-download-desktop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff69b4;
+  font-weight: 600;
+  background-color: #ffd0e5;
+  padding: 10px;
+}
+.nav-download-desktop .nav-download-icon-desktop {
+  fill: #ff69b4;
+  height: 30px;
+}
 
 /*# sourceMappingURL=style-desktop.css.map */

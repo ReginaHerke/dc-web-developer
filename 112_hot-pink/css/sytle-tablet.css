@@ -1,0 +1,23 @@
+.desktop-only {
+  display: inherit;
+}
+
+section {
+  margin: 0px 40px;
+}
+
+.nav-wrapper {
+  padding: 40px 20px;
+}
+
+header {
+  padding-bottom: 80px;
+}
+
+.header-img-wrapper {
+  height: 500px;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=sytle-tablet.css.map */

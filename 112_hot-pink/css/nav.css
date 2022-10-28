@@ -13,8 +13,13 @@ nav {
   padding: 20px 10px;
 }
 
-.nav-download-mobile {
+.nav-download-icon-mobile {
+  fill: #ff69b4;
   height: 30px;
+}
+
+.nav-download-desktop {
+  display: none;
 }
 
 /*# sourceMappingURL=nav.css.map */

@@ -42,6 +42,8 @@ header {
 .factbox {
   display: flex;
   padding: var.$spacing-80 0px;
+  gap: var.$spacing-40;
+  justify-content: center;
 
   .factbox-fact {
     display: flex;
