@@ -12,10 +12,11 @@ section {
   width: 1200px;
 }
 
+.nav-wrapper {
+  padding: var.$spacing-10;
+}
+
 header {
-  margin-top: var.$spacing-80;
-  background-color: var.$color-beige;
-  padding-bottom: var.$spacing-40;
   display: flex;
 }
 
