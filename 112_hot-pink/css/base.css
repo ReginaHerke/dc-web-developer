@@ -3,13 +3,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
+  color: #282726;
 }
 
 .desktop-only {
   display: none;
 }
 
-.container-mobile {
+section {
   margin: 0px 10px;
 }
 
@@ -19,6 +20,24 @@ h1 {
   margin: 0;
   background: linear-gradient(180deg, transparent 60%, #ff69b4 60%);
   display: inline;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2em;
+  margin: 0px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0px;
+}
+
+hr {
+  border: none;
+  border-bottom: 6px dashed #ff69b4;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=base.css.map */
