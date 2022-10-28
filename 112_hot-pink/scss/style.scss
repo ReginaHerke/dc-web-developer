@@ -42,17 +42,17 @@ header {
 .factbox {
   display: flex;
   padding: var.$spacing-80 0px;
-}
 
-.factbox-fact {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: var.$spacing-20;
+  .factbox-fact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var.$spacing-20;
 
-  svg {
-    fill: var.$color-hot-pink;
-    height: 40px;
+    svg {
+      fill: var.$color-hot-pink;
+      height: 40px;
+    }
   }
 }
 
@@ -62,12 +62,17 @@ header {
   article {
     display: flex;
     flex-direction: column;
+    gap: 250px;
   }
 }
 
 .how-to-imagewrapper {
+  display: flex;
+  justify-content: center;
+  margin: var.$spacing-40 0px;
   img {
     position: absolute;
+    width: 80vw;
   }
 }
 
@@ -80,5 +85,53 @@ header {
   }
   p {
     margin: 0px;
+  }
+}
+
+.app-download {
+  color: var.$color-white;
+  margin: -10px 0px;
+  display: flex;
+  flex-direction: column;
+
+  .app-download-text-wrapper {
+    background-color: var.$color-hot-pink;
+    padding: var.$spacing-40 var.$spacing-10;
+  }
+  .app-picture {
+    width: 200px;
+    align-self: flex-end;
+    position: absolute;
+    margin-top: 180px;
+  }
+  .app-download-badge-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: var.$spacing-40;
+    img {
+      width: 150px;
+    }
+  }
+}
+
+.kitchen-categories {
+  margin-top: var.$spacing-80;
+  h2 {
+    margin-bottom: var.$spacing-40;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var.$spacing-10;
+    a {
+      display: block;
+      background-color: var.$color-beige;
+      color: var.$color-hot-pink;
+      text-decoration: none;
+      padding: var.$spacing-10;
+      &:hover {
+        background-color: var.$color-hot-pink-50;
+      }
+    }
   }
 }
