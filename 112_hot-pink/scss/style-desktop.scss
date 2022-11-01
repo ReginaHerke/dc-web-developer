@@ -18,7 +18,7 @@ h2 {
 }
 
 section {
-  width: 1200px;
+  width: 1000px;
   margin: 0px auto;
 }
 
@@ -55,34 +55,47 @@ section {
     height: 15px;
   }
 }
+header {
+  margin-bottom: 100px;
+  .header-desktop-wrapper {
+    width: 1200px;
+    margin: 0px auto;
+    padding: var.$spacing-80 0px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: var.$spacing-40;
 
-.header-desktop-wrapper {
-  width: 1200px;
-  margin: 0px auto;
-  padding: var.$spacing-80 0px 0px 0px;
+    .header-img-wrapper {
+      border-radius: 50px 50px 50px 0px;
+      margin: 0px;
+      height: 500px;
+    }
+
+    section p {
+      text-align: right;
+      margin: var.$spacing-80 0px;
+    }
+  }
+}
+
+.factbox {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  gap: var.$spacing-40;
-
-  .header-img-wrapper {
-    border-radius: 50px 50px 50px 0px;
-    margin: 0px;
-  }
-
-  section p {
-    text-align: right;
-    margin: var.$spacing-80 0px;
-  }
+  flex-direction: row;
 }
 
 .how-to {
   padding: var.$spacing-80 0px;
-
+  p {
+    text-align: center;
+  }
   .how-to-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 250px);
-    gap: var.$spacing-40;
+    row-gap: var.$spacing-80;
+  }
+  .how-to-infobox p {
+    text-align: left;
   }
 }
 
@@ -104,53 +117,45 @@ section {
   justify-content: center;
 }
 
+.app-download-section-wrapper {
+  padding: var.$spacing-40 0px;
+  margin: 100px 0px 150px 0px;
+}
+
 .app-download {
-  background-color: var.$color-hot-pink;
-  width: 100%;
-
-  .app-download-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 1200px;
-    margin: 0px auto;
-
-    .app-download-text-wrapper {
-      background-color: var.$color-hot-pink-50;
-      padding: var.$spacing-40 var.$spacing-10;
+  .app-download-text {
+    width: 70%;
+  }
+  .app-download-badge {
+    flex-direction: row;
+    gap: var.$spacing-20;
+    img {
+      height: 50px;
+      width: auto;
     }
-    .app-picture {
-      align-self: flex-end;
-      position: absolute;
-      right: 0;
-      img {
-        width: 400px;
-      }
-    }
-    .app-download-badge-wrapper {
-      display: flex;
-      flex-direction: row;
-      gap: var.$spacing-20;
-      margin-top: var.$spacing-40;
-      img {
-        height: 50px;
-        width: auto;
-      }
+  }
+  .app-download-picture {
+    position: absolute;
+    margin-top: -150px;
+    right: 0;
+    img {
+      width: 500px;
     }
   }
 }
 
 .kitchen-categories {
-  div {
-    justify-content: center;
+  h2 {
+    text-align: left;
   }
 }
 
 .footer-wrapper {
-  width: 1200px;
+  width: 1000px;
   margin: 0px auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-about-us {

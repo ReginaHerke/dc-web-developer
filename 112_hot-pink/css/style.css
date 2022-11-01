@@ -36,6 +36,7 @@ header {
 
 .factbox {
   display: flex;
+  flex-direction: column;
   padding: 80px 0px;
   gap: 40px;
   justify-content: center;
@@ -48,7 +49,7 @@ header {
 }
 .factbox .factbox-fact svg {
   fill: #ff69b4;
-  height: 40px;
+  height: 70px;
 }
 
 .how-to {
@@ -113,33 +114,31 @@ header {
   justify-content: center;
 }
 
-.app-download {
+.app-download-section-wrapper {
+  background-color: #ff69b4;
   color: #ffffff;
-  margin: -10px 0px;
+  padding: 40px 10px;
 }
-.app-download .app-download-wrapper {
+
+.app-download {
   display: flex;
   flex-direction: column;
 }
-.app-download .app-download-wrapper .app-download-text-wrapper {
-  background-color: #ff69b4;
-  padding: 40px 10px;
-}
-.app-download .app-download-wrapper .app-picture {
-  align-self: flex-end;
-  position: absolute;
-  margin-top: 180px;
-}
-.app-download .app-download-wrapper .app-picture img {
-  width: 200px;
-}
-.app-download .app-download-wrapper .app-download-badge-wrapper {
+.app-download .app-download-badge {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
 }
-.app-download .app-download-wrapper .app-download-badge-wrapper img {
+.app-download .app-download-badge img {
   width: 150px;
+}
+.app-download .app-download-picture {
+  position: absolute;
+  margin-top: 250px;
+  right: 0;
+}
+.app-download .app-download-picture img {
+  width: 200px;
 }
 
 .kitchen-categories {
@@ -155,13 +154,14 @@ header {
 }
 .kitchen-categories div a {
   display: block;
-  background-color: #f2ece5;
+  background-color: #ffd0e5;
   color: #ff69b4;
   text-decoration: none;
   padding: 10px;
 }
 .kitchen-categories div a:hover {
-  background-color: #ffd0e5;
+  background-color: #ff69b4;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

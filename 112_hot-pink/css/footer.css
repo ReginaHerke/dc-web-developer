@@ -28,8 +28,11 @@ footer .footer-social-media {
   margin-top: 20px;
 }
 footer .footer-social-media a {
-  background-color: #ffd0e5;
+  background-color: transparent;
   padding: 5px;
+}
+footer .footer-social-media a:hover {
+  background-color: #ffd0e5;
 }
 footer .footer-social-media img {
   height: 20px;

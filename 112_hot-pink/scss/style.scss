@@ -41,6 +41,7 @@ header {
 
 .factbox {
   display: flex;
+  flex-direction: column;
   padding: var.$spacing-80 0px;
   gap: var.$spacing-40;
   justify-content: center;
@@ -53,7 +54,7 @@ header {
 
     svg {
       fill: var.$color-hot-pink;
-      height: 40px;
+      height: 70px;
     }
   }
 }
@@ -121,33 +122,31 @@ header {
   justify-content: center;
 }
 
-.app-download {
+.app-download-section-wrapper {
+  background-color: var.$color-hot-pink;
   color: var.$color-white;
-  margin: -10px 0px;
+  padding: var.$spacing-40 var.$spacing-10;
+}
 
-  .app-download-wrapper {
+.app-download {
+  display: flex;
+  flex-direction: column;
+  .app-download-text {
+  }
+  .app-download-badge {
     display: flex;
     flex-direction: column;
-
-    .app-download-text-wrapper {
-      background-color: var.$color-hot-pink;
-      padding: var.$spacing-40 var.$spacing-10;
+    margin-top: var.$spacing-40;
+    img {
+      width: 150px;
     }
-    .app-picture {
-      align-self: flex-end;
-      position: absolute;
-      margin-top: 180px;
-      img {
-        width: 200px;
-      }
-    }
-    .app-download-badge-wrapper {
-      display: flex;
-      flex-direction: column;
-      margin-top: var.$spacing-40;
-      img {
-        width: 150px;
-      }
+  }
+  .app-download-picture {
+    position: absolute;
+    margin-top: 250px;
+    right: 0;
+    img {
+      width: 200px;
     }
   }
 }
@@ -163,12 +162,13 @@ header {
     gap: var.$spacing-10;
     a {
       display: block;
-      background-color: var.$color-beige;
+      background-color: var.$color-hot-pink-50;
       color: var.$color-hot-pink;
       text-decoration: none;
       padding: var.$spacing-10;
       &:hover {
-        background-color: var.$color-hot-pink-50;
+        background-color: var.$color-hot-pink;
+        color: var.$color-white;
       }
     }
   }
