@@ -1,5 +1,14 @@
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
 .desktop-only {
-  display: inherit;
+  display: flex;
 }
 
 .logo {
@@ -7,16 +16,14 @@
 }
 
 section {
-  margin: 0px auto;
   width: 1200px;
+  margin: 0px auto;
 }
 
 .nav-wrapper {
   padding: 10px;
-}
-
-header {
-  display: flex;
+  width: 1200px;
+  margin: 0px auto;
 }
 
 .nav-download-icon-mobile {
@@ -31,10 +38,113 @@ header {
   font-weight: 600;
   background-color: #ffd0e5;
   padding: 10px;
+  border: none;
+}
+.nav-download-desktop:hover {
+  background-color: #ff69b4;
+  color: #ffffff;
+}
+.nav-download-desktop:hover svg {
+  fill: #ffffff;
 }
 .nav-download-desktop .nav-download-icon-desktop {
   fill: #ff69b4;
-  height: 30px;
+  height: 15px;
+}
+
+.header-desktop-wrapper {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 80px 0px 0px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 40px;
+}
+.header-desktop-wrapper .header-img-wrapper {
+  border-radius: 50px 50px 50px 0px;
+  margin: 0px;
+}
+.header-desktop-wrapper section p {
+  text-align: right;
+  margin: 80px 0px;
+}
+
+.how-to {
+  padding: 80px 0px;
+}
+.how-to .how-to-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 250px);
+  gap: 40px;
+}
+
+.how-to-imagewrapper-bg02 {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+#how-to-infobox-middle {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+
+.how-to-infobox {
+  background-color: #f2ece5;
+  border-radius: 0px 20px 20px 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-download {
+  background-color: #ff69b4;
+  width: 100%;
+}
+.app-download .app-download-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin: 0px auto;
+}
+.app-download .app-download-wrapper .app-download-text-wrapper {
+  background-color: #ffd0e5;
+  padding: 40px 10px;
+}
+.app-download .app-download-wrapper .app-picture {
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+}
+.app-download .app-download-wrapper .app-picture img {
+  width: 400px;
+}
+.app-download .app-download-wrapper .app-download-badge-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 40px;
+}
+.app-download .app-download-wrapper .app-download-badge-wrapper img {
+  height: 50px;
+  width: auto;
+}
+
+.kitchen-categories div {
+  justify-content: center;
+}
+
+.footer-wrapper {
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-about-us {
+  width: 30%;
 }
 
 /*# sourceMappingURL=style-desktop.css.map */

@@ -1,23 +1,31 @@
 @use "variables" as var;
 
-.desktop-only {
-  display: inherit;
+h1 {
+  font-size: 3em;
 }
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.desktop-only {
+  display: flex;
+}
+
 .logo {
   height: 60px;
 }
 
 section {
-  margin: 0px auto;
   width: 1200px;
+  margin: 0px auto;
 }
 
 .nav-wrapper {
   padding: var.$spacing-10;
-}
-
-header {
-  display: flex;
+  width: 1200px;
+  margin: 0px auto;
 }
 
 .nav-download-icon-mobile {
@@ -32,8 +40,119 @@ header {
   font-weight: 600;
   background-color: var.$color-hot-pink-50;
   padding: var.$spacing-10;
+  border: none;
+
+  &:hover {
+    background-color: var.$color-hot-pink;
+    color: var.$color-white;
+    svg {
+      fill: var.$color-white;
+    }
+  }
+
   .nav-download-icon-desktop {
     fill: var.$color-hot-pink;
-    height: 30px;
+    height: 15px;
   }
+}
+
+.header-desktop-wrapper {
+  width: 1200px;
+  margin: 0px auto;
+  padding: var.$spacing-80 0px 0px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: var.$spacing-40;
+
+  .header-img-wrapper {
+    border-radius: 50px 50px 50px 0px;
+    margin: 0px;
+  }
+
+  section p {
+    text-align: right;
+    margin: var.$spacing-80 0px;
+  }
+}
+
+.how-to {
+  padding: var.$spacing-80 0px;
+
+  .how-to-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 250px);
+    gap: var.$spacing-40;
+  }
+}
+
+.how-to-imagewrapper-bg02 {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+#how-to-infobox-middle {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.how-to-infobox {
+  background-color: var.$color-beige;
+  border-radius: 0px 20px 20px 20px;
+  padding: var.$spacing-40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-download {
+  background-color: var.$color-hot-pink;
+  width: 100%;
+
+  .app-download-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0px auto;
+
+    .app-download-text-wrapper {
+      background-color: var.$color-hot-pink-50;
+      padding: var.$spacing-40 var.$spacing-10;
+    }
+    .app-picture {
+      align-self: flex-end;
+      position: absolute;
+      right: 0;
+      img {
+        width: 400px;
+      }
+    }
+    .app-download-badge-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: var.$spacing-20;
+      margin-top: var.$spacing-40;
+      img {
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.kitchen-categories {
+  div {
+    justify-content: center;
+  }
+}
+
+.footer-wrapper {
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-about-us {
+  width: 30%;
 }

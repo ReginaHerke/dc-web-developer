@@ -54,56 +54,91 @@ header {
 .how-to {
   padding: 80px 0px;
 }
-.how-to article {
-  display: flex;
-  flex-direction: column;
-  gap: 250px;
+.how-to .how-to-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 80px;
 }
 
-.how-to-imagewrapper {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0px;
+.how-to-imagewrapper-bg01 {
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/112_hot-pink/_img/01_background.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
 }
-.how-to-imagewrapper img {
+.how-to-imagewrapper-bg01 img {
+  display: block;
+  height: 100%;
+}
+
+.how-to-imagewrapper-bg02 {
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/112_hot-pink/_img/02_background.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+.how-to-imagewrapper-bg02 img {
+  display: block;
+  height: 100%;
+}
+
+.how-to-imagewrapper-bg03 {
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/112_hot-pink/_img/03_background.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+.how-to-imagewrapper-bg03 img {
+  display: block;
+  height: 100%;
+}
+
+.how-to-img-illustration {
   position: absolute;
-  width: 80vw;
+  height: 80%;
 }
 
 .how-to-infobox {
   background-color: #f2ece5;
   border-radius: 0px 20px 20px 20px;
   padding: 40px;
-}
-.how-to-infobox h3 {
-  margin-bottom: 20px;
-}
-.how-to-infobox p {
-  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .app-download {
   color: #ffffff;
   margin: -10px 0px;
+}
+.app-download .app-download-wrapper {
   display: flex;
   flex-direction: column;
 }
-.app-download .app-download-text-wrapper {
+.app-download .app-download-wrapper .app-download-text-wrapper {
   background-color: #ff69b4;
   padding: 40px 10px;
 }
-.app-download .app-picture {
-  width: 200px;
+.app-download .app-download-wrapper .app-picture {
   align-self: flex-end;
   position: absolute;
   margin-top: 180px;
 }
-.app-download .app-download-badge-wrapper {
+.app-download .app-download-wrapper .app-picture img {
+  width: 200px;
+}
+.app-download .app-download-wrapper .app-download-badge-wrapper {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
 }
-.app-download .app-download-badge-wrapper img {
+.app-download .app-download-wrapper .app-download-badge-wrapper img {
   width: 150px;
 }
 

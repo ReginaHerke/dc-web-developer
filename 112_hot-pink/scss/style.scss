@@ -61,57 +61,93 @@ header {
 .how-to {
   padding: var.$spacing-80 0px;
 
-  article {
-    display: flex;
-    flex-direction: column;
-    gap: 250px;
+  .how-to-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: var.$spacing-10;
+    justify-content: center;
+    margin-top: var.$spacing-80;
   }
 }
 
-.how-to-imagewrapper {
-  display: flex;
-  justify-content: center;
-  margin: var.$spacing-40 0px;
+.how-to-imagewrapper-bg01 {
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/112_hot-pink/_img/01_background.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
   img {
-    position: absolute;
-    width: 80vw;
+    display: block;
+    height: 100%;
   }
+}
+
+.how-to-imagewrapper-bg02 {
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/112_hot-pink/_img/02_background.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  img {
+    display: block;
+    height: 100%;
+  }
+}
+
+.how-to-imagewrapper-bg03 {
+  background-image: url(/Users/reginaherke/Documents/GitHub/dc-web-developer/112_hot-pink/_img/03_background.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  img {
+    display: block;
+    height: 100%;
+  }
+}
+
+.how-to-img-illustration {
+  position: absolute;
+  height: 80%;
 }
 
 .how-to-infobox {
   background-color: var.$color-beige;
   border-radius: 0px 20px 20px 20px;
   padding: var.$spacing-40;
-  h3 {
-    margin-bottom: var.$spacing-20;
-  }
-  p {
-    margin: 0px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .app-download {
   color: var.$color-white;
   margin: -10px 0px;
-  display: flex;
-  flex-direction: column;
 
-  .app-download-text-wrapper {
-    background-color: var.$color-hot-pink;
-    padding: var.$spacing-40 var.$spacing-10;
-  }
-  .app-picture {
-    width: 200px;
-    align-self: flex-end;
-    position: absolute;
-    margin-top: 180px;
-  }
-  .app-download-badge-wrapper {
+  .app-download-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: var.$spacing-40;
-    img {
-      width: 150px;
+
+    .app-download-text-wrapper {
+      background-color: var.$color-hot-pink;
+      padding: var.$spacing-40 var.$spacing-10;
+    }
+    .app-picture {
+      align-self: flex-end;
+      position: absolute;
+      margin-top: 180px;
+      img {
+        width: 200px;
+      }
+    }
+    .app-download-badge-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: var.$spacing-40;
+      img {
+        width: 150px;
+      }
     }
   }
 }

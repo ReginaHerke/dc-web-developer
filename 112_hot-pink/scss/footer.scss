@@ -2,18 +2,13 @@
 
 footer {
   background-color: var.$color-beige;
-  padding: var.$spacing-40 0px;
-  margin-top: var.$spacing-80;
+  padding: var.$spacing-40 var.$spacing-10;
+  margin-top: 120px;
 
   .footer-helpful-links {
     display: flex;
     flex-direction: column;
-    gap: var.$spacing-20;
-    div {
-      display: flex;
-      flex-direction: column;
-    }
-
+    margin-bottom: var.$spacing-20;
     h4 {
       margin-bottom: var.$spacing-10;
     }
@@ -27,22 +22,22 @@ footer {
   }
 
   .footer-about-us {
-    margin-top: var.$spacing-20;
     font-size: 0.75em;
   }
 
   .footer-social-media {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: var.$spacing-20;
     margin-top: var.$spacing-20;
 
-    div {
-      display: flex;
-      gap: var.$spacing-20;
+    a {
+      background-color: var.$color-hot-pink-50;
+      padding: 5px;
     }
+
     img {
-      height: 30px;
+      height: 20px;
     }
   }
 }

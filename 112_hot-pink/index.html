@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link
       rel="stylesheet"
-      href="css/sytle-tablet.css"
-      media="(min-width: 600px)"
-    />
-    <link
-      rel="stylesheet"
       href="css/style-desktop.css"
       media="(min-width: 1200px)"
     />
@@ -45,7 +40,7 @@
             />
           </g>
         </svg>
-        <div class="nav-download-desktop">
+        <button class="nav-download-desktop">
           <p>app download</p>
           <svg
             class="nav-download-icon-desktop"
@@ -64,38 +59,43 @@
               />
             </g>
           </svg>
-        </div>
+        </button>
       </div>
     </nav>
 
     <header>
-      <div class="header-img-wrapper"></div>
-      <section>
-        <div><h1>This will be your first Headline</h1></div>
-        <p class="desktop-only">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-          veniam rerum suscipit assumenda placeat. Eius natus, sit recusandae,
-          voluptate quia accusantium explicabo numquam optio atque doloremque
-          odit ad repellendus saepe.
-        </p>
-        <div class="searchbar-wrapper">
-          <input type="text" placeholder="search your soul food" />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 289 289"
-          >
-            <path
-              d="M92.6,0C41.5,0,0,41.5,0,92.6c0,51,41.5,92.6,92.6,92.6c16.3,0,31.6-4.2,45-11.7l21.2,21.2l-6,6
+      <div class="header-desktop-wrapper">
+        <div class="header-img-wrapper"></div>
+        <section>
+          <div><h1>This will be your first Headline</h1></div>
+          <p class="desktop-only">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consectetur veniam rerum suscipit assumenda placeat. Eius natus, sit
+            recusandae, voluptate quia accusantium explicabo numquam optio atque
+            doloremque odit ad repellendus saepe. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Neque dolorem tenetur accusantium quae
+            ipsa at, cum eius in! Sed amet aspernatur beatae nemo quo a dolor
+            aut qui ducimus eius.
+          </p>
+          <div class="searchbar-wrapper">
+            <input type="text" placeholder="search your soul food" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 289 289"
+            >
+              <path
+                d="M92.6,0C41.5,0,0,41.5,0,92.6c0,51,41.5,92.6,92.6,92.6c16.3,0,31.6-4.2,45-11.7l21.2,21.2l-6,6
 	c-3.3,3.2-3.3,8.8,0,12l64,64c8.3,8.3,19.1,12.4,29.9,12.4c10.8,0,21.7-4.1,29.9-12.4c16.5-16.5,16.5-43.4,0-59.9l-64-64
 	c-3.3-3.3-8.7-3.3-12,0l-6,6l-21.2-21.2c7.4-13.3,11.7-28.7,11.7-45C185.2,41.5,143.6,0,92.6,0L92.6,0z M170.7,206.6l35.9-35.9
 	l58,58c4.8,4.8,7.4,11.2,7.4,18c0,6.8-2.6,13.2-7.4,18c-9.9,9.9-26,9.9-35.9,0L170.7,206.6z M151.7,163.7c4.3-3.6,8.4-7.6,12-12
 	l18.9,18.9l-12,12L151.7,163.7z M92.6,168.2c-41.7,0-75.6-33.9-75.6-75.6c0-41.7,33.9-75.6,75.6-75.6c41.7,0,75.6,33.9,75.6,75.6
 	C168.2,134.3,134.3,168.2,92.6,168.2L92.6,168.2z M92.6,168.2"
-            />
-          </svg>
-        </div>
-      </section>
+              />
+            </svg>
+          </div>
+        </section>
+      </div>
     </header>
 
     <section class="factbox">
@@ -189,15 +189,17 @@
         suscipit soluta veritatis reprehenderit, excepturi itaque vel obcaecati,
         odio magnam cum molestiae.
       </p>
-
-      <article>
-        <div class="how-to-imagewrapper">
-          <img src="./_img/01_background.svg" alt="" />
+      <div class="how-to-container">
+        <div class="how-to-imagewrapper-bg01">
+          <img
+            src="./_img/01_choose-food.svg"
+            alt=""
+            class="how-to-img-illustration"
+          />
           <img src="./_img/01_background-border.svg" alt="" />
-          <img src="./_img/01_choose-food.svg" alt="" />
         </div>
 
-        <div class="how-to-infobox">
+        <div class="how-to-infobox" id="how-to-infobox-middle">
           <h3>choose the food you like</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sit
@@ -206,12 +208,13 @@
             praesentium voluptas delectus sequi minus?
           </p>
         </div>
-      </article>
-      <article>
-        <div class="how-to-imagewrapper">
-          <img src="./_img/02_background.svg" alt="" />
+        <div class="how-to-imagewrapper-bg02">
+          <img
+            src="./_img/02_order-online.svg"
+            alt=""
+            class="how-to-img-illustration"
+          />
           <img src="./_img/02_background-border.svg" alt="" />
-          <img src="./_img/02_order-online.svg" alt="" />
         </div>
 
         <div class="how-to-infobox">
@@ -223,12 +226,14 @@
             praesentium voluptas delectus sequi minus?
           </p>
         </div>
-      </article>
-      <article>
-        <div class="how-to-imagewrapper">
-          <img src="./_img/03_background.svg" alt="" />
+
+        <div class="how-to-imagewrapper-bg03">
+          <img
+            src="./_img/03_fast-delivery.svg"
+            alt=""
+            class="how-to-img-illustration"
+          />
           <img src="./_img/03_background-border.svg" alt="" />
-          <img src="./_img/03_fast-delivery.svg" alt="" />
         </div>
 
         <div class="how-to-infobox">
@@ -240,27 +245,26 @@
             praesentium voluptas delectus sequi minus?
           </p>
         </div>
-      </article>
+      </div>
     </section>
 
     <section class="app-download">
-      <img
-        src="./_img/App-Download.png"
-        alt="Download the HotPink App"
-        class="app-picture"
-      />
-
-      <div class="app-download-text-wrapper">
-        <h3>Write a headline about to download the app</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-          quidem corporis esse pariatur culpa cum quibusdam, iure temporibus
-          suscipit fugit nobis dicta quasi tempora modi, quaerat itaque id
-          dolores? Eum!
-        </p>
-        <div class="app-download-badge-wrapper">
-          <a href="#"><img src="./_img/app-store-badge.png" alt="" /></a>
-          <a href="#"><img src="./_img/google-play-badge.png" alt="" /></a>
+      <div class="app-download-wrapper">
+        <div class="app-picture">
+          <img src="./_img/App-Download.png" alt="Download the HotPink App" />
+        </div>
+        <div class="app-download-text-wrapper">
+          <h3>Write a headline about to download the app</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
+            quidem corporis esse pariatur culpa cum quibusdam, iure temporibus
+            suscipit fugit nobis dicta quasi tempora modi, quaerat itaque id
+            dolores? Eum!
+          </p>
+          <div class="app-download-badge-wrapper">
+            <a href="#"><img src="./_img/app-store-badge.png" alt="" /></a>
+            <a href="#"><img src="./_img/google-play-badge.png" alt="" /></a>
+          </div>
         </div>
       </div>
     </section>
@@ -280,35 +284,28 @@
     </section>
 
     <footer>
-      <section class="footer-helpful-links">
-        <div>
+      <div class="footer-wrapper">
+        <div class="footer-helpful-links">
           <h4>helpful links</h4>
           <a href="#">first link</a>
           <a href="#">second link</a>
           <a href="#">another link</a>
           <a href="#">last link</a>
         </div>
-        <div>
+        <div class="footer-helpful-links">
           <h4>some more links</h4>
           <a href="#">first link</a>
           <a href="#">second link</a>
           <a href="#">another link</a>
           <a href="#">last link</a>
         </div>
-      </section>
-      <section class="footer-about-us">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sed
-          eum suscipit tenetur tempora amet explicabo sapiente facere
-          voluptatibus!
-        </p>
-        <div class="footer-social-media">
-          <img
-            src="./_img/hotpink-logo.svg"
-            alt="HotPink Delivery"
-            class="logo"
-          />
-          <div>
+        <div class="footer-about-us">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint sed
+            eum suscipit tenetur tempora amet explicabo sapiente facere
+            voluptatibus!
+          </p>
+          <div class="footer-social-media">
             <a href="#"
               ><img
                 src="./_img/download-button.svg"
@@ -326,7 +323,7 @@
             /></a>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
