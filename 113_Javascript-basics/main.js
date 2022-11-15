@@ -246,3 +246,59 @@ function take_umbrella(weather, number) {
 }
 
 console.log(take_umbrella("sunny", 0.4));
+
+/* Beispiel Noten */
+
+function schoolGrades(mark) {
+  if (mark <= 100 && mark > 90) {
+    return "Sehr gut!!!";
+  } else if (mark <= 90 && mark > 80) {
+    return "Gut!";
+  } else if (mark <= 80 && mark > 70) {
+    return "Befriedigend";
+  } else if (mark <= 70 && mark > 60) {
+    return "Genügend";
+  } else if (mark <= 60 && mark > 50) {
+    return "Nicht Genügend";
+  } else if (mark < 50) {
+    return "try again";
+  }
+}
+console.log(schoolGrades(-5));
+
+/* Schleife */
+
+let myText = "Hallo JS";
+
+for (let i = 0; i < 7; i++) {
+  console.log(myText);
+}
+
+/* Notendurchschnitt */
+
+let noten = [80, 77, 88, 95, 68];
+let summe = 0;
+let average = 0;
+
+for (let i = 0; i < noten.length; i++) {
+  summe = summe + noten[i];
+}
+average = summe / noten.length;
+console.log(average);
+
+/* Fibonacci */
+
+let zahlen = [15, 10, 6, 8, 9, 11];
+
+for (let i = 0; i < zahlen.length; i++) {
+  if (zahlen[i] % 2 == 0) {
+    console.log(zahlen[i]);
+  }
+}
+
+let fib = [0, 1];
+
+for (let i = 2; i < 11; i++) {
+  fib[i] = fib[i - 2] + fib[i - 1];
+}
+console.log(fib);
