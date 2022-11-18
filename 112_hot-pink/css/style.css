@@ -70,6 +70,7 @@ header {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
+  justify-self: center;
 }
 .how-to-imagewrapper-bg01 img {
   display: block;
@@ -82,6 +83,7 @@ header {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
+  justify-self: center;
 }
 .how-to-imagewrapper-bg02 img {
   display: block;
@@ -94,6 +96,7 @@ header {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
+  justify-self: center;
 }
 .how-to-imagewrapper-bg03 img {
   display: block;
@@ -103,6 +106,7 @@ header {
 .how-to-img-illustration {
   position: absolute;
   height: 80%;
+  z-index: 100;
 }
 
 .how-to-infobox {

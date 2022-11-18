@@ -78,6 +78,8 @@ header {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
+  justify-self: center;
+
   img {
     display: block;
     height: 100%;
@@ -90,6 +92,7 @@ header {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
+  justify-self: center;
   img {
     display: block;
     height: 100%;
@@ -102,6 +105,8 @@ header {
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
+  justify-self: center;
+
   img {
     display: block;
     height: 100%;
@@ -111,6 +116,7 @@ header {
 .how-to-img-illustration {
   position: absolute;
   height: 80%;
+  z-index: 100;
 }
 
 .how-to-infobox {

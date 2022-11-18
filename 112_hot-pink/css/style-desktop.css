@@ -39,6 +39,7 @@ section {
   background-color: #ffd0e5;
   padding: 10px;
   border: none;
+  animation: heartbeat 3s infinite;
 }
 .nav-download-desktop:hover {
   background-color: #ff69b4;
@@ -87,11 +88,23 @@ header .header-desktop-wrapper section p {
 }
 .how-to .how-to-container {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 250px);
+  grid-template-rows: repeat(3, 300px);
   row-gap: 80px;
 }
 .how-to .how-to-infobox p {
   text-align: left;
+}
+
+.how-to-img-frame-animation-01 {
+  animation: moveframe01 3s infinite alternate;
+}
+
+.how-to-img-frame-animation-02 {
+  animation: moveframe02 3s infinite alternate;
+}
+
+.how-to-img-frame-animation-03 {
+  animation: moveframe03 3s infinite alternate;
 }
 
 .how-to-imagewrapper-bg02 {

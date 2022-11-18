@@ -41,6 +41,7 @@ section {
   background-color: var.$color-hot-pink-50;
   padding: var.$spacing-10;
   border: none;
+  animation: heartbeat 3s infinite;
 
   &:hover {
     background-color: var.$color-hot-pink;
@@ -91,12 +92,21 @@ header {
   }
   .how-to-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 250px);
+    grid-template-rows: repeat(3, 300px);
     row-gap: var.$spacing-80;
   }
   .how-to-infobox p {
     text-align: left;
   }
+}
+.how-to-img-frame-animation-01 {
+  animation: moveframe01 3s infinite alternate;
+}
+.how-to-img-frame-animation-02 {
+  animation: moveframe02 3s infinite alternate;
+}
+.how-to-img-frame-animation-03 {
+  animation: moveframe03 3s infinite alternate;
 }
 
 .how-to-imagewrapper-bg02 {
