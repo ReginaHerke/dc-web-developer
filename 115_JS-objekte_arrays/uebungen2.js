@@ -52,16 +52,32 @@ const course = {
       this.students
     );
   },
-  newStudent(name) {
-    this.students.push(name);
-    console.log(this.students);
+  newStudent() {
+    let person = prompt("Name eingeben");
+    if (this.students.length < 6) {
+      this.students.push(person);
+      console.log(this.students);
+    } else {
+      console.log("Teilnehmerzahl erreicht!");
+    }
   },
   addTopic(titel, units, trainer) {
-    this.topics.push(titel, units, trainer);
+    this.topics.push({ titel, units, trainer });
     console.log(this.topics);
+  },
+  sumAllUnits() {
+    let sum = 0;
+
+    for (let i = 0; i < this.topics.length; i++) {
+      sum = sum + this.topics[i].units;
+    }
+
+    return "Stunden gesamt: " + sum;
   },
 };
 
 course.courseInformations();
-course.newStudent("laura");
-course.addTopic("kurs", 15, "name");
+course.newStudent();
+
+course.addTopic("xyz", 15, "Manuel");
+console.log(course.sumAllUnits());
