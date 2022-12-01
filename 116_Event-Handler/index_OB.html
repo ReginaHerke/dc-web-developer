@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form {
+                margin:5rem;
+                padding:2rem;
+                background-color: aliceblue;
+                text-align: center;
+            }
+            input, textarea {
+                width:100%;
+                margin:0.5rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="contactForm" onsubmit="return submitForm()">
+        <!--form id="contactForm"-->
+            <input id="name" placeholder="Name"/>
+            <input id="email" placeholder="E-Mail"/>
+            <textarea id="message" placeholder="Message"></textarea>
+            <button id="submitButton" type="submit">Send</button>
+        </form>
+
+        <script>
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const submitButton = document.getElementById('submitButton');
+
+            // add form event listeners -------------------------
+            // on change of name field
+            nameInput.addEventListener('change', function() {
+                validateLength('name');
+            });
+            // on keyup of email
+            emailInput.addEventListener('keyup', validateEmail);
+            // on mousedrop of content into email field
+            emailInput.addEventListener('drop', validateEmail);
+            // on change of message
+            messageInput.addEventListener('change', function() {
+                validateLength('message', 10);
+            });
+            /*
+            submitButton.addEventListener('click', function(event) {
+                console.log('+--- clicked submitForm button', event);
+
+                event.preventDefault();
+            });
+            */
+
+            // add window event listeners -------------------------
+            window.addEventListener('beforeunload', eventOnLeavingWebsite);
+
+            // functions for validation -------------------------
+            function validateLength(fieldId, minCharacters = 3) {
+                console.log('validate length of '+ fieldId +' '+ minCharacters);
+
+                //TODO validate length
+            }
+            function validateEmail(event) {
+                let inputValue = emailInput.value;
+
+                if (!inputValue.length) {
+                    return null;
+                }
+                // handle keys
+                switch(event.key) {
+                    case 'Tab':
+                    case 'Meta':
+                        return null;
+                }
+
+                console.log('validate email address ', emailInput.value);
+
+                //TODO validate email format
+            }
+
+            // submit form -------------------------
+            function submitForm() {
+                console.log('+--- called submitForm');
+
+                // validate name
+                validateLength('name');
+                // validate email
+                validateEmail();
+                // validate message
+                validateLength('message', 10);
+
+                //TODO handle validation
+
+                // prevent form to be sent by default
+                return false;
+            }
+
+            // global events -------------------------
+            function eventOnLeavingWebsite(event) {
+                console.log('+--- called leave window');
+
+                //TODO check if content in form exists
+                event.preventDefault();
+            }
+        </script>
+
+    </body>
+</html>
